@@ -46,25 +46,30 @@
             <div class="search-bar col-md-6 mx-auto">
                 <h1 class="text-center">Lyrics Search</h1>
                 <div class="search-box my-5">
-                    <input type="text" class="form-control" placeholder="Enter your artist song name">
-                    <button class="btn btn-success search-btn">Search</button>
+                    <input id="search-area" type="text" class="form-control" placeholder="Enter your artist song name">
+                    <button id="search-button" class="btn btn-success search-btn">Search</button>
                 </div>
             </div>
             <!-- === Simple results === -->
             <div class="d-flex justify-content-center">
                 <div class="">
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
-                    <p class="author lead"><strong>Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-one">Purple Noon</span></strong> Album by <span id="artist-one">Washed Out</span> <button id="button-one" class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-two"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-three"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-four"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-five"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-six"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-seven"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-eight"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-nine"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
+                    <p class="author lead"><strong> <span id="title-ten"></span> Purple Noon</strong> Album by <span>Washed Out</span> <button class="btn btn-success">Get Lyrics</button></p>
                 </div>
             </div>
             <!-- Single Lyrics -->
             <div class="single-lyrics text-center">
                 <button class="btn go-back">&lsaquo;</button>
-                <h2 class="text-success mb-4">Pentatonix - Na Na Na</h2>
-                <pre class="lyric text-white">
+                <h2 id="lyric-title" class="text-success mb-4">Pentatonix - Na Na Na</h2>
+                <pre id="full-lyric" class="lyric text-white">
     Wont go whistling like the wind blows,
     Looking out my window,
     Just to see the shine
@@ -214,6 +219,7 @@
         </main>
     </div>
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
